@@ -1,0 +1,109 @@
+                            <!-- 11.
+                            INCLUDED: 
+                            N TH CHILDI SECMEK VE EDITLEMEK -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    p{
+        font: size 15px;
+    }
+    p:first-child{
+        background: blue;
+    }
+
+    p:last-child{
+        background: red;
+    }
+    p:nth-child(3){
+        background: green;
+    }
+    p:nth-child(2) {
+        color :yellow
+    }
+
+
+
+/* burda da birinci pararafi , 2 ni 3 u bele secib , 
+rengini backgroundunu deyismek olur */
+
+
+p:nth-child(even){
+    color : blue
+}
+
+p:nth-child(odd){
+    color:purple 
+}
+
+/* burda da cut paragraf setirlerini goy rengde , te paragraflari is e qirmizi
+rengde edir */
+  
+
+/* ------------------------------------------------------------- */
+
+ul{
+    font-size: 1.5em;
+    list-style-type:none;
+}
+ul li:nth-child(2n+1){
+
+    color:rebeccapurple
+}
+ul li:nth-child(2n)
+{
+    color: red;
+}
+
+ul li:nth-child(n+4){
+    background: black;
+}
+
+
+/* burda da 0 dan saymaga baslayaraq 2 4 6 8 10 culari qirmiz, qalanlarini ise benovseyi edir 
+ve 4 cuden qalanin qara rengli arxa fon edir */
+
+
+
+
+ 
+    </style>
+</head>
+<body>
+     
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, deleniti.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, deleniti.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, deleniti.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, deleniti.</p>
+
+
+
+<!--  ----------------------------------------------------------  ---- -->
+ <ul>
+    <li>element</li>
+    <li>element</li>
+    <li>element</li>
+    <li>element</li>
+    <li>element</li>
+    <li>element</li>
+    <li>element</li>
+    <li>element</li>
+    <li>element</li>
+    <li>element</li>
+    <li>element</li>
+
+ </ul>
+
+
+
+
+</body>
+</html>

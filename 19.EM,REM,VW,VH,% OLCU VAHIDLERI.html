@@ -1,0 +1,143 @@
+                                            <!-- 19.
+                                            INCLUDED:
+                                            EM,REM,VW,VH,% OLCU VAHIDLERI -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          div{
+                font-size: 2em;
+            } 
+/* normalda body nin 4default font size-i 16px di .
+icindeki butun elementler de default 16 olur . amma burda 
+2em verdik , yani 16px * 2 (vurulsun) olur
+ve onun icindeki dive gore divinde daxilindeki butun elementler
+2x defe boyuyur. */
+            
+             p{
+                font-size: 2em ;
+            } 
+/* burda ise divin icindeki p ni de 2 defe artiririq yani p 4 defe boyumus olur
+ */
+
+ /* amma diger p divin icinde olmadigi ucun ve onu ayrica boyutmediyimiz ucun oldugu kimi default */
+     
+    h1{
+         font-size: 2rem;
+     } 
+
+     /* rem olcusu ise default bodynin yox html hissenin olculerin alir  */
+
+
+/* 
+     /* -------------------------------------------------------------------------------- */
+      html{
+         font-size: 15px;
+     }
+
+     p{
+         font-size: 50%;
+     } 
+
+
+     /* BURDAKI FAIZ ISARESI DE HTML IN OZUNE UYGUN SEYFENIN FAIZIN TAPIR  */
+
+/* -------------------------------------------------------------------------------- */
+/* 
+div{
+    width: 60vw;
+    height: 20vh;
+    background: #a7a7a7;
+} */
+    /* burda da divin enini 60vh yani seyfedeki uzunlugun 60faizi,
+    hundurluyu de 20vh yani seyfedeki umumi uzunlugdan 40 faizi edirik. */
+  
+
+
+/* ------------------------------------------------------------------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back{
+    background-image: url("pexels-leon-macapagal-6622889.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    text-align: center center;
+    padding: 10rem;
+
+}
+
+
+h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+
+}
+
+P{
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+/* burda da arxa fona sekil elave edirik ve onu , borderlerin legv edib uzunlug ve 
+enin seyfenin ozune uygun veririk faizle */
+
+
+
+@media (max-size:550px)
+{
+    h1{
+        font-size: 2rem;
+        margin-bottom: 0.5;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
+
+
+/* butda da telefon ekranina uygun olculeri biraz kicildirik  */
+
+    </style>
+  
+
+</head>
+<body>
+    <!-- <div class="box"> 
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, pariatur.
+        </p>
+    </div>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quod.
+    </p>
+
+    <h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, possimus. </h1>
+      -->
+    <div class="back">
+
+        <h1>
+            Wellcome to website
+        </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, deserunt?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+                            <!-- 17.
+                            INCLUDED :
+                            FLEX EXTRA OZELLIKLER -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+.container{
+
+    display: flex;
+    width: 75%;
+    height: 50%;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-direction: row;
+    min-height: 600px;
+    background: black;
+}
+
+        .box{
+            text-align: center;
+            width: 200px;
+            border: 1px solid black;
+            height: 100px;
+            margin: 10px;
+            align-self: flex-end;
+
+            /* burda da hamisi  boxlar asagi duserek 
+            containerin en asagisinda  olur */
+        }
+
+        .box-1{
+            order: 2;
+            background: red;
+            flex-grow: 2;
+            /* bu flex grow emri de rirmizini rengi 2x defe boyudur */
+
+
+        }
+/* order funksiasi ile yazdigimiz say sirasin gosterir boxun  
+yani goy qirmizi yasil olacqq burda */
+
+        .box2{
+            order: 3;
+            background: green;
+            
+            align-self: center;
+
+            /* burda da green olan box 2 yani asagi duserek 
+            containerin ortasinda olur */
+            flex-grow: 6;
+            /* bu flex grow emri de yasil rengi 6x defe boyudur */
+        }
+
+        .box3{
+            order: 1;
+            background: blue;
+            align-self: flex-start;
+            flex-grow: 1;
+            /* bu flex grow emri de goy rengi 1x defe boyudur , amma 
+            digerlerine yasil ve qirmizi olana hecbir flex-grow yazmasaq 
+            sadece burda yazsaq onda onda goy rengin uzunlugu yasildan
+             qirmiziya qeder olan hisseni tutacaq butun */
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container"> 
+    <div class="box box-1">
+
+    </div>
+
+    
+    <div class="box box2">
+
+    </div>
+    
+    <div class="box box3">
+
+    </div>
+</div>
+
+</body>
+</html>

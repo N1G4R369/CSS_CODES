@@ -1,0 +1,146 @@
+                                                <!-- 
+                                                    INCLUDED:
+                                                    CSS SELECTORLARI, CSS IN ISLEME PRINSIPI
+                                                    IMPORTANT FUNKSIYASI
+                                                 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+         h1{
+            color: blue;
+            background-color: darkcyan; 
+        }
+        /* tekce butun h1 olan hisseleri bele  (SELECTWOR EDIB) rengleyir */  
+        
+        p{  
+            color: blue;                    
+            background-color: darkcyan;    
+        } 
+        /* tekce butun paagraflar olan hisseleri bele rengleyir */ 
+        
+        h1,p {
+            color: blue;
+            background-color: darkcyan; 
+        } 
+        /*  butun paagraflar olan hisseleri bele rengleyir */  
+        
+        #logo{
+            color: blue;
+            background-color: darkcyan; 
+        } 
+        /* tekce id lere css de stili bele # ile veririk */
+        
+        .info{
+            color: blue;
+            background-color: darkcyan; 
+        }
+        /* tekce info adli classlari secir ve rengleyir */
+        #logo,.info{
+            color: blue;
+            background-color: darkcyan; 
+        }
+        /* hem logo olan id leri hemde info olan class lari secib run edir */
+        #logo,.lead{
+            color: blue;
+            background-color: darkcyan; 
+        }
+        /* burda hem logo id sini hemde lead olan classi cagirirq */
+         #paragraf1.lead{
+            color: blue;
+            background-color: darkcyan; 
+        } 
+        /* burda da hem idsi paragraf1 olan hemde classi lead olan setir sececek (1 setir isaretlenir)*/
+
+         a{
+             text-decoration: none;
+         }
+         /* burda butun a olan (href)linklerin altindaki duz xettleri silir  */
+         ul li a {
+             text-decoration: none;
+         }
+         /* burda is e hamisini yox , sadece ul nin icindeki ve li nin icindeki (parentlerin) a  linkleri silir */
+
+         .info span{
+             color: red;
+         }
+        /*  burda da  info clasini icindeki spanlari  rengleyirik */
+         .info .primary{
+             color: red;
+         } 
+         /* burda da info clasinin icindeki child olan primary adli clasi red edirik */
+
+         *{
+             font-size: 30px;
+         }
+         /* Burda sadece * secmekle seyfedeki butun obyektlerin stilin deyisirik, eyni edirik(hersey 30 px olcude olur) */
+
+
+         h3{
+             color: blue;
+
+             color: red;
+         }
+     
+         /* burda da header3 u birinci goy reng elesekde sonradan qirmizi eledik ve 2 denebele still yazilanda 
+          ,  onda sonuncu yazilan (en asagida yazilmis stil) esas goturulur ve qirmiz olur yazi numunede */
+
+
+          #dragon{
+             color: green  !important;
+         }
+         /* bunu asagida rengini deyisirik ve pink edirik, amma burda !important sozunu yazanda
+          onun renginin deysilmesinin qarsisin aliriq ve yasil reng olaraq qalir.
+          */
+
+    </style>
+</head>
+<body>
+    
+    <header>
+
+        <h1>HEADER 1 </h1>
+        <h1 id="logo"> LOGO </h1>
+    
+        <ul>
+            <li>
+                <a href="#">contact</a>
+            </li>
+            <li>
+                <a href="#">service</a>
+            </li>
+        
+        </ul>
+
+        
+    </header>
+        <h1>header 2</h1>
+        <h3 id="dragon" style="color: pink;">HEADER 3</h3>
+     <!-- burda rengi pink edirik amma usteki green important sozune gore reng yasil; olaraq deyismezz qalir. -->
+
+    <p id="paragraf1" class="lead info" > 
+        <!-- class adlari eger bosluqla yazilanda onu 2 soz kimi goturur.yani lead info yazilib deye uste (styleda)
+        onu .lead kimi ve ya .info kimi cagirsaq eyni netice verecek . amma lead_info yazilsa onu ele cagia bilmeyecek.
+        gere onu .lead_info kimi cagiraq  -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aperiam.
+    </p>   
+    <p class="info">
+        Lorem ipsum dolor sit amet, <span class="primary">consectetur</span>  adipisicing elit. Repellat, ex.
+    </p> 
+    <p class="info">
+        Lorem, ipsum dolor sit amet consectetur <span>adipisicing</span> adipisicing elit. Sit, culpa.    
+    </p>
+    <p>test paragraf</p>
+    <a href="#">home</a>
+</body>
+</html>

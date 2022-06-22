@@ -1,0 +1,107 @@
+                                    <!-- 
+                                      16.
+                                     INCLUDED :
+                                     FLEX(BOXLARIN (DIVLERI) DUZULUS FORMASI
+                                     -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+            padding: 0px;
+        }
+
+        .container {
+            min-height: 300px;
+            width: 80%;
+            margin: 50px;
+            padding: 20px;
+            display: flex;
+            /*  burda displayi flex verende 
+            alt alta olan bozlar yan yana paralel formasina cevrilir */
+            flex-direction: column;
+            /* burda da column  directionu yazanda column yazanda sira 
+            ile olur, amma row yazanda paralelde oldugu kimi default qalir*/
+
+            background-color: black;
+            justify-content: flex-end; 
+            /*burda da flex end verende sondan duzulmeye baslayir 
+            boxlar ve burda flex -start center kimi de vermek olrur*/
+            justify-content :flex-start;
+            /*burda da bayaki kimid amma bosluqlar qoyur boxlar arasinda space between,
+             evently, around kimi bosluq qoyma novleri var  */
+
+             align-items :flex-start;
+
+             /* burda da flex start yazanda usteden baslayir duzmeye 
+             qutulari duz xett boyu , flex-end yazanda ise containerin  asagisi 
+             ile baslayir duzmeye qutulari. */
+
+             flex-wrap :wrap;
+              
+             /*  burda da flex wrap funksiyasi ile coxlu qutulari sira
+             ile yerlesdirende say cox olanda , yani yerlesmeyende weight
+             olcusu avyomatik azalir yani balacalasir , bunun qarsisin 
+             almaq ucun ve boxlari alt alta yerlesdirmek ucun bu funksia yazilir.
+              */
+
+        }
+
+        .box {
+            border: solid red;
+            text-align: center;
+            color: cadetblue;
+            width: 200px;
+            background-color: azure;
+            margin: 20px;
+            height: 200px;
+            text-align: center;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>article1</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                elit. Accusantium laborum quasi cum quas nesciunt
+                assumenda.</p>
+
+        </div>
+
+        <div class="box">
+            <h1>article2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                elit. Accusantium laborum quasi cum quas nesciunt
+                assumenda.</p>
+        </div>
+
+        <div class="box">
+            <h1>article3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                elit. Accusantium laborum quasi cum quas nesciunt
+                assumenda.</p>
+
+        </div>
+
+
+</body>
+
+</html>

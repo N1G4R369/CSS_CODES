@@ -1,0 +1,95 @@
+                        <!-- 6 
+                            INCLUDED :
+                            PSEUDO ELEMENTLERI
+                            (FIRST-LINE, FIRTST-LETTER,BEFORE,AFTER)
+                         -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loreeem{
+
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+
+        .loreeem::first-line
+        {
+            color: blue;
+        }
+
+        .loreeem::first-letter{
+
+            color: red;
+        }
+        .loreeem::after{
+           content: "paragrafin sonu "; 
+        }
+
+        .loreeem::before{
+            content: "paragrafin evveli";
+        }
+
+        .loreeem::after{
+            content: url(https://logowik.com/content/uploads/images/949_anonymous_logo.jpg);
+        }
+
+        .loreeem::before{
+            content: url(./download.png);
+        }
+ /* 
+ burda da lorem ipsum  yazib onun , ilk setirini  goy rengde edirik ve ilk 
+ bas herfini qirmizi edirik, linkle ve fayylarla ona sekil elave edirik  */
+
+        /* ----------------------------------------------------------- */
+
+
+        div#box1{
+
+            width: 50%;
+            height: 100px;
+            background: red;
+        }
+        
+        div#box2{
+            width: 50%;
+            height: 50px;
+            background: blue;
+        }
+        /* qirmizi qutu aciriq hansi ki seyfenin eninden 50%-i di. ve onun da icine
+        goy qutu qoyuruq ve o da qirmizinin 50% i di. seyfe boyudukce onlar da oz
+        50 faizlik olculerini qoruyub saxliyirlar*/
+
+
+    </style>
+
+</head>
+<body>
+    <p class="loreeem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro est recusandae rerum, veritatis labore dicta excepturi vero, quidem velit vitae! Repellat labore eum soluta exercitationem illo suscipit pariatur possimus modi nemo, mollitia iure beatae voluptatem voluptates reiciendis quos aut voluptatum porro corporis odit minus veniam sapiente dolorem at recusandae.</p>
+
+<!-- ---------------------------------------------------------------------- -->
+
+
+<div id="box1">
+
+    <div id="box2">
+hellllllllllllllllllllllllllllllllllllllllllllllllllllllo
+    </div>
+
+    
+</div>
+
+
+</body>
+</html>
